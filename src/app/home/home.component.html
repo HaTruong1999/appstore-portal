@@ -18,15 +18,20 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img style="height: 50px;" src="assets/images/logo-icon.png" alt="Chain App Dev">
+            <a href="index.html" class="logo d-flex">
+              <div style="padding-right: 10px;">
+                <img style="height: 50px;" src="assets/images/logo-icon.png">
+              </div>
+              <div>
+                <span class="logo-text">APP STORE</span>
+              </div>
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#services">Apps</a></li>
-              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li> 
+              <li><div class="gradient-button"><a id="modal_trigger" href="#modal">Hà Văn Trường</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -39,14 +44,13 @@
 </header>
 <!-- ***** Header Area End ***** -->
 
-<div id="modal" class="popupContainer" style="display:none;">
+  <div id="modal" class="popupContainer" style="display:none;">
     <div class="popupHeader">
         <span class="header_title">Login</span>
         <span class="modal_close"><i class="fa fa-times"></i></span>
     </div>
 
     <section class="popupBody">
-        <!-- Social Login -->
         <div class="social_login">
             <div class="">
                 <a href="#" class="social_box fb">
@@ -71,7 +75,6 @@
             </div>
         </div>
 
-        <!-- Username & Password Login form -->
         <div class="user_login">
             <form>
                 <label>Email / Username</label>
@@ -96,7 +99,6 @@
             <a href="#" class="forgot_password">Forgot password?</a>
         </div>
 
-        <!-- Register Form -->
         <div class="user_register">
             <form>
                 <label>Full Name</label>
@@ -132,17 +134,17 @@
           <div class="row">
             <div class="col-lg-6 align-self-center">
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="row">
+                <div class="row" style="margin-bottom: 150px;">
                   <div class="col-lg-12">
-                    <h2>Get The Latest App From App Stores</h2>
-                    <p>Chain App Dev is an app landing page HTML5 template based on Bootstrap v5.1.3 CSS layout provided by TemplateMo, a great website to download free CSS templates.</p>
+                    <h2 style="color: #fff;">Kho Ứng Dụng Nội Bộ Trung Tâm IT-KV2</h2>
+                    <p>Ứng dụng nội bộ lưu hành giữa các phòng thuộc Trung tâm Công Nghệ Thông Tin Khu Vực 2 - Thành Phố Hồ Chí Minh</p>
                   </div>
                   <div class="col-lg-12">
                     <div class="white-button first-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-apple"></i></a>
+                      <a href="#contact">Apple Store <i class="fab fa-apple"></i></a>
                     </div>
                     <div class="white-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-google-play"></i></a>
+                      <a href="#contact">CH Plays <i class="fab fa-google-play"></i></a>
                     </div>
                   </div>
                 </div>
@@ -159,65 +161,88 @@
     </div>
   </div>
 
-  <div id="services" class="services section">
+  <div id="services" class="services section" style="padding-top: 0px;">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h4>Amazing <em>Services &amp; Features</em> for you</h4>
+          <div  class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s" style="margin-bottom: 10px !important;">
+            <h4>Danh sách <em>Ứng dụng</em></h4>
             <img src="assets/images/heading-line-dec.png" alt="">
-            <p>If you need the greatest collection of HTML templates for your business, please visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS</a> Blog. If you need to have a contact form PHP script, go to <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more information.</p>
+            <!-- <p>If you need the greatest collection of HTML templates for your business, please visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS</a> Blog. If you need to have a contact form PHP script, go to <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more information.</p> -->
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="service-item first-service">
-            <div class="icon"></div>
-            <h4>App Maintenance</h4>
-            <p>You are not allowed to redistribute this template ZIP file on any other website.</p>
-            <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
-            </div>
+
+    <div class="container" style="padding: 0px 150px;">
+      <div class="row app-item">
+        <div class="service-item first-service d-flex align-items-center" style="padding: 10px;">
+          <div style="padding-right: 20px;">
+            <img style="height: 60px; width: 60px" src="assets/images/vnptscheduler.png" alt="" />
+          </div>
+
+          <div>
+            <h4 style="margin: 0px;">Lịch họp VNPT</h4>
+            <p style="margin: 0px;">Ứng dụng xem lịch họp Tập đoàn VNPT</p>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="service-item second-service">
-            <div class="icon"></div>
-            <h4>Rocket Speed of App</h4>
-            <p>You are allowed to use the Chain App Dev HTML template. Feel free to modify or edit this layout.</p>
-            <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
-            </div>
+      </div>
+
+      <div class="row app-item">
+        <div class="service-item first-service d-flex align-items-center" style="padding: 10px;">
+          <div style="padding-right: 20px;">
+            <img style="height: 60px; width: 60px" src="https://appstore.vnptit.vn/img/apps/vnpt.myVNPT.png" alt="" />
+          </div>
+
+          <div>
+            <h4 style="margin: 0px;">VNPT Schedule</h4>
+            <p style="margin: 0px;">Ứng dụng xem lịch hop, và hệ thống điều hành quản lý công việc Được phát triển bởi Trung Tâm Công Nghệ Thông Tin - VNPT TP.HCM</p>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="service-item third-service">
-            <div class="icon"></div>
-            <h4>Multi Workflow Idea</h4>
-            <p>If this template is beneficial for your work, please support us <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">a little via PayPal</a>. Thank you.</p>
-            <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
-            </div>
+      </div>
+
+      <div class="row app-item">
+        <div class="service-item first-service d-flex align-items-center" style="padding: 10px;">
+          <div style="padding-right: 20px;">
+            <img style="height: 60px; width: 60px" src="https://appstore.vnptit.vn/img/apps/vnpt.myVNPT.png" alt="" />
+          </div>
+
+          <div>
+            <h4 style="margin: 0px;">My VNPT</h4>
+            <p style="margin: 0px;">My VNPT là ứng dụng do VNPT TP.Hồ Chí Minh phát triển nhằm hỗ trợ cho các Khách hàng của VNPT có thể chủ động quản lý thông tin liên hệ và thanh toán cước viễn thông trực tuyến bằng tài khoản ngân hàng hoặc các hình thức thanh toán trực tuyến khác</p>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="service-item fourth-service">
-            <div class="icon"></div>
-            <h4>24/7 Help &amp; Support</h4>
-            <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
-            <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
-            </div>
+      </div>
+
+      <div class="row app-item">
+        <div class="service-item first-service d-flex align-items-center" style="padding: 10px;">
+          <div style="padding-right: 20px;">
+            <img style="height: 60px; width: 60px" src="https://appstore.vnptit.vn/img/apps/icon_ucc_vcall.jpg" alt="" />
+          </div>
+
+          <div>
+            <h4 style="margin: 0px;">UCC VCall</h4>
+            <p style="margin: 0px;">Ứng dụng gọi video call</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row app-item">
+        <div class="service-item first-service d-flex align-items-center" style="padding: 10px;">
+          <div style="padding-right: 20px;">
+            <img style="height: 60px; width: 60px" src="https://appstore.vnptit.vn/img/apps/idp_boca.png" alt="" />
+          </div>
+
+          <div>
+            <h4 style="margin: 0px;">IDP BOCA - PROD</h4>
+            <p style="margin: 0px;">Hệ thống xác thực định danh điện tử Bộ Công An</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <footer id="newsletter">
+  <!-- <footer id="newsletter">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
@@ -305,4 +330,4 @@
         </div>
       </div>
     </div>
-</footer>
+  </footer> -->
