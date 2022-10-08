@@ -69,7 +69,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        padding: 120px 10px 20px 10px;
+        padding: 80px 10px 20px 10px;
         position: relative;
         overflow: hidden;
         &:after {
@@ -105,8 +105,8 @@
                 line-height: 40px;
                 }
                 p {
-                    margin-bottom: 20px;
-                    font-size: 12px;
+                    margin-bottom: 0px;
+                    font-size: 14px;
                 }
             }
             .white-button {
@@ -167,13 +167,13 @@
                     .title-container {
                         //max-width: 220px;
                         h4 {
-                            font-size: 14px;
+                            font-size: 15px;
                             //white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
                         }
                         p{
-                            font-size: 10px;
+                            font-size: 13px;
                             line-height: 20px;
                             //white-space: nowrap;
                             overflow: hidden;
@@ -185,8 +185,8 @@
                     }
                     .btn {
                         border-radius: 20px;
-                        width: 60px !important;
-                        font-size: 10px;
+                        width: 65px !important;
+                        font-size: 11px;
                         padding: 0px;
                     }
                 }
