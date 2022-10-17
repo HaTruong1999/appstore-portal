@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from '../../../../environments/environment';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Constant } from '../../constant';
 // import { ToastrService } from 'ngx-toastr';
 // import { TranslateService } from '@ngx-translate/core';
@@ -30,8 +30,8 @@ export class AppsService {
 		// 	this.authService.redirectToLoginPage();
 		// }
 	}
-	Apps(page: number, limit: number, search: string, custId: string, sort: string) {
-		const url = this.apiUrl.concat(Constant.Apps) + "?page=" + page + "&limit=" + limit + "&search=" + search + "&custId=" + custId + "&sort=" + sort;
+	Apps(page: number, limit: number, search: string, sort: string) {
+		const url = this.apiUrl.concat(Constant.Apps) + "?page=" + page + "&limit=" + limit + "&search=" + search + "&sort=" + sort;
 		return this.http.get<any>(url);
 	}
 
