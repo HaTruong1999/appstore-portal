@@ -40,7 +40,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./dist/appstore-vnpt --domain appstore-vnpt-dev.surge.sh"
+      "pre-push": "surge --project ./dist/appstore-vnpt --domain appstore-vnpt.surge.sh"
     }
   }
 }
