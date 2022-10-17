@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
 
   getData() {
     this.isLoadingTable = true;
-    this.appsService.Apps(this.currentPage, this.currentPageSize, this.searchValue, this.sort)
+    this.appsService.Apps(this.currentPage, this.currentPageSize, this.searchValue)
       .subscribe((res: any) => {
         this.isLoadingTable = false;
 

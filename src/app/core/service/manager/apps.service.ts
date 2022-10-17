@@ -30,8 +30,8 @@ export class AppsService {
 		// 	this.authService.redirectToLoginPage();
 		// }
 	}
-	Apps(page: number, limit: number, search: string, sort: string) {
-		const url = this.apiUrl.concat(Constant.Apps) + "?page=" + page + "&limit=" + limit + "&search=" + search + "&sort=" + sort;
+	Apps(page: number, limit: number, search: string) {
+		const url = this.apiUrl.concat(Constant.Apps) + "?page=" + page + "&limit=" + limit + "&search=" + search;
 		return this.http.get<any>(url);
 	}
 

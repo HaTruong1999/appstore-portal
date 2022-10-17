@@ -22,9 +22,6 @@ export const Constant = {
     //TaskRoles
     TaskRoles: 'api/v1/webadmin/taskroles',
 
-    //Workplaces
-    //Workplaces: 'api/v1/webadmin/workplaces',
-
     //WorkplaceType
     WorkplaceType: 'api/v1/webadmin/workplacetype',
 
@@ -35,7 +32,6 @@ export const Constant = {
     Accounts: 'api/v1/webadmin/accounts',
 
     //Users
-    //Users: 'api/v1/webadmin/users',
     Users: 'users',
 
     //PersonalContacts
