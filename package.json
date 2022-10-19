@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "heroku-postbuild": "ng build --prod",
-    "postinstall": "ng build --output-path appstore_vnpt --aot --prod"
+    "postinstall": "ng build --output-path appstore-vnpt --aot --prod"
   },
   "private": true,
   "dependencies": {
