@@ -6,7 +6,9 @@
     "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "heroku-postbuild": "ng build --prod",
+    "postinstall": "ng build --output-path appstore_vnpt --aot --prod"
   },
   "private": true,
   "dependencies": {
@@ -42,5 +44,9 @@
     "scripts": {
       "pre-push": "surge --project ./dist/appstore-vnpt --domain appstore-vnpt.surge.sh"
     }
+  },
+  "engines": {
+    "node": "16.16.0",
+    "npm": "8.11.0"
   }
 }
