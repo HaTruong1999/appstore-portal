@@ -8,19 +8,18 @@ const routes: Routes = [
     path: "home",
     pathMatch: "prefix",
     component: HomeComponent,
-    //canActivate: [AuthGuard],
-    children: [
-      {
-        path: "",
-        component: HomeComponent,
-        data: { title: 'Dashboard' }
-      }
-    ]
+    // children: [
+    //   {
+    //     path: "",
+    //     component: HomeComponent,
+    //     data: { title: 'Home' }
+    //   }
+    // ]
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: "legacy" })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
