@@ -179,7 +179,7 @@
     <div class="row app-item" *ngFor="let item of listApps">
       <div class="service-item first-service d-flex align-items-center" style="padding: 10px;">
         <div>
-          <img style="height: 60px; width: 60px" src="https://appstore.vnptit.vn/img/apps/vnpt.myVNPT.png" alt="" />
+          <img style="height: 60px; width: 60px" [src]="item.appAvatar" alt="" />
         </div>
 
         <div class="flex-grow-1 d-flex justify-content-between align-items-center">
@@ -198,101 +198,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="row app-item">
-      <div class="service-item first-service d-flex align-items-center" style="padding: 10px;">
-        <div>
-          <img style="height: 60px; width: 60px" src="https://appstore.vnptit.vn/img/apps/vnpt.myVNPT.png" alt="" />
-        </div>
-
-        <div class="flex-grow-1 d-flex justify-content-between align-items-center">
-          <div class="p-2 title-container">
-            <h4 style="margin: 0px;">VNPT Schedule</h4>
-            <p style="margin: 0px;">Ứng dụng xem lịch hop, và hệ thống điều hành quản lý công việc Được phát triển bởi
-              Trung Tâm Công Nghệ Thông Tin - VNPT TP.HCM</p>
-          </div>
-
-          <div class="p-2 btn-container">
-            <a href="#">
-              <button type="button" class="btn btn-outline-primary" style="border-radius: 30px;width: 105px;">
-                <i class="fas fa-arrow-circle-down"></i>
-                Android</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row app-item">
-      <div class="service-item first-service d-flex align-items-center" style="padding: 10px;">
-        <div>
-          <img style="height: 60px; width: 60px" src="https://appstore.vnptit.vn/img/apps/vnpt.myVNPT.png" alt="" />
-        </div>
-
-        <div class="flex-grow-1 d-flex justify-content-between align-items-center">
-          <div class="p-2 title-container">
-            <h4 style="margin: 0px;">My VNPT</h4>
-            <p style="margin: 0px;">My VNPT là ứng dụng do VNPT TP.Hồ Chí Minh phát triển nhằm hỗ trợ cho các Khách hàng
-              của VNPT có thể chủ động quản lý thông tin liên hệ và thanh toán cước viễn thông trực tuyến bằng tài khoản
-              ngân hàng hoặc các hình thức thanh toán trực tuyến khác</p>
-          </div>
-
-          <div class="p-2 btn-container">
-            <a href="#">
-              <button type="button" class="btn btn-outline-primary" style="border-radius: 30px;width: 105px;">
-                <i class="fas fa-arrow-circle-down"></i>
-                Android</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row app-item">
-      <div class="service-item first-service d-flex align-items-center" style="padding: 10px;">
-        <div>
-          <img style="height: 60px; width: 60px" src="https://appstore.vnptit.vn/img/apps/icon_ucc_vcall.jpg" alt="" />
-        </div>
-
-        <div class="flex-grow-1 d-flex justify-content-between align-items-center">
-          <div class="p-2 title-container">
-            <h4 style="margin: 0px;">UCC VCall</h4>
-            <p style="margin: 0px;">Ứng dụng gọi video call</p>
-          </div>
-
-          <div class="p-2 btn-container">
-            <a href="#">
-              <button type="button" class="btn btn-outline-primary" style="border-radius: 30px;width: 105px;">
-                <i class="fas fa-arrow-circle-down"></i>
-                Android</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row app-item">
-      <div class="service-item first-service d-flex align-items-center" style="padding: 10px;">
-        <div>
-          <img style="height: 60px; width: 60px" src="https://appstore.vnptit.vn/img/apps/idp_boca.png" alt="" />
-        </div>
-
-        <div class="flex-grow-1 d-flex justify-content-between align-items-center">
-          <div class="p-2 title-container">
-            <h4 style="margin: 0px;">IDP BOCA - PROD</h4>
-            <p style="margin: 0px;">Hệ thống xác thực định danh điện tử Bộ Công An</p>
-          </div>
-
-          <div class="p-2 btn-container">
-            <a href="#">
-              <button type="button" class="btn btn-outline-primary" style="border-radius: 30px;width: 105px;">
-                <i class="fas fa-arrow-circle-down"></i>
-                Android</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 
 </div>

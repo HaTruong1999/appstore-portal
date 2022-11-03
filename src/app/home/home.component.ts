@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AppsService } from '../core/service/manager/apps.service';
 import { ITEMS_PER_PAGE, ITEMS_PAGESIZE } from "../core/config/pagination.constants";
-
+import { environment } from 'src/environments/environment';
+const apiUrl = environment.backEndApiURL;
 
 declare let $: any;
 @Component({
@@ -51,14 +52,13 @@ export class HomeComponent implements OnInit {
       .subscribe((res: any) => {
         this.isLoadingTable = false;
 
-        if (res.code == 200) {
-          this.listApps = res.data.items;
-          this.total = res.data.meta.totalItems;
-          console.log('this.listApps: :', this.listApps)
-        }
-        else {
-          console.log('Không tải được dữ liệu');
-        }
+        this.listApps = res.items;
+        this.listApps.forEach(item => {
+          if(item.appAvatar)
+            item.appAvatar = apiUrl + item.appAvatar;
+        });
+        this.total = res.meta.totalItems;
+        console.log('list: ', this.listApps);
       }, error => {
         this.isLoadingTable = false;
         console.log('Không tải được dữ liệu');

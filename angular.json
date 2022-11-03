@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "1_AppStore_Portal": {
+    "appstore-vnpt": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "1_AppStore_Portal:build:production"
+              "browserTarget": "appstore-vnpt:build:production"
             },
             "development": {
-              "browserTarget": "1_AppStore_Portal:build:development"
+              "browserTarget": "appstore-vnpt:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "1_AppStore_Portal:build"
+            "browserTarget": "appstore-vnpt:build"
           }
         },
         "test": {
