@@ -6,8 +6,10 @@
     "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "postinstall": "ng build --output-path appstore-vnpt --aot production",
-    "heroku-postbuild": "ng build production ",
+    "postinstall": "ng build --output-path appstore-vnpt --aot --prod",
+    "heroku-postbuild": "ng build --prod",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
     "test": "ng test"
   },
   "private": true,
