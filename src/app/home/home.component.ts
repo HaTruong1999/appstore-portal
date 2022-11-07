@@ -56,6 +56,8 @@ export class HomeComponent implements OnInit {
         this.listApps.forEach(item => {
           if(item.appAvatar)
             item.appAvatar = apiUrl + item.appAvatar;
+          else
+            item.appAvatar = 'assets/images/avatar-app-default.png';
         });
         this.total = res.meta.totalItems;
         console.log('list: ', this.listApps);
