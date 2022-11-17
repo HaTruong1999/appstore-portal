@@ -58,9 +58,15 @@ export class HomeComponent implements OnInit {
             item.appAvatar = apiUrl + item.appAvatar;
           else
             item.appAvatar = 'assets/images/avatar-app-default.png';
+          
+          if(item.appFileAndroid)
+            item.appFileAndroid = apiUrl + item.appFileAndroid;
+          
+          if(item.appFileIOS)
+            item.appFileIOS = apiUrl + item.appFileIOS;
         });
         this.total = res.meta.totalItems;
-        console.log('list: ', this.listApps);
+        // console.log('list: ', this.listApps);
       }, error => {
         this.isLoadingTable = false;
         console.log('Không tải được dữ liệu');
