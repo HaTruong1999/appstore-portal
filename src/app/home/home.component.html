@@ -1,0 +1,71 @@
+<div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-12">
+        <div class="row content-banner">
+          <div class="col-lg-6 align-self-center">
+            <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+              <div class="row" style="margin-bottom: 150px;">
+                <div class="col-lg-12 left-content-1">
+                  <h2 style="color: #fff;">Chợ Ứng Dụng VNPT</h2>
+                  <p style="color: #f9fafb;">Công ty Công nghệ Thông tin VNPT</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 content-banner-img">
+            <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <img src="assets/images/slider-dec.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="services" class="services section" style="padding-top: 100px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s"
+          style="margin-bottom: 10px !important;">
+          <h4>Danh sách <em>Ứng dụng</em></h4>
+          <img src="assets/images/heading-line-dec.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container app-item-container" style="padding: 0px 150px;">
+    <div class="row app-item" *ngFor="let item of listApps">
+      <div class="service-item first-service d-flex align-items-center" style="padding: 10px;">
+        <div>
+          <img style="height: 60px; width: 60px" [src]="item.appAvatar" alt="" />
+        </div>
+
+        <div class="flex-grow-1 d-flex justify-content-between align-items-center">
+          <div class="p-2 title-container">
+            <h4 style="margin: 0px;">{{item.appName}}</h4>
+            <p style="margin: 0px;">{{item.appDescription}}</p>
+          </div>
+
+          <div class="p-2 btn-container d-flex justify-content-between" style="flex-direction: column;">
+            <div *ngIf="item.appFileAndroid" class="btn-container" style="margin-bottom: 5px">
+              <a [href]="item.appFileAndroid">
+                <button type="button" class="btn btn-outline-primary btn-download">
+                  Android</button>
+              </a>
+            </div>
+            <div *ngIf="item.appFileIOS" class="btn-container">
+              <a [href]="item.appFileIOS">
+                <button type="button" class="btn btn-outline-primary btn-download">
+                  IOS</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
