@@ -26,7 +26,8 @@ export class HomeComponent implements OnInit {
   searchValue: string = '';
   sort = '';
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+   
     if($('.menu-trigger').length){
       $(".menu-trigger").on('click', function() { 
         $(".menu-trigger").toggleClass('active');
@@ -38,11 +39,11 @@ export class HomeComponent implements OnInit {
       });
     }
 
+    await this.getAdminToken();
     this.onSearch();
   }
 
   onSearch() {
-    //this.searchValue = this.search;
     this.getData();
   }
 
@@ -66,10 +67,25 @@ export class HomeComponent implements OnInit {
             item.appFileIOS = apiUrl + item.appFileIOS;
         });
         this.total = res.meta.totalItems;
-        // console.log('list: ', this.listApps);
       }, error => {
         this.isLoadingTable = false;
         console.log('Không tải được dữ liệu');
+      });
+  }
+
+  getAdminToken() {
+    this.appsService.getAdminToken()
+      .subscribe((res: any) => {
+        if(res.code === 1){
+          let info = this.appsService.parseJwt(res.data.accessToken);
+          if (info != null) {
+            this.appsService.setWithExpiry("token", res.data.accessToken, info.exp);
+          }
+        }else{
+          console.log('không xác minh được, vui lòng liên hệ quản trị!');
+        }
+      }, error => {
+        console.log('không xác minh được, vui lòng liên hệ quản trị!');
       });
   }
 }

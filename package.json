@@ -1,12 +1,12 @@
 {
-  "name": "appstore-vnpt",
+  "name": "appstore-portal",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "postinstall": "ng build --output-path appstore-vnpt --aot --prod",
+    "postinstall": "ng build --output-path appstore-portal --aot --prod",
     "heroku-postbuild": "ng build --prod",
     "lint": "ng lint",
     "e2e": "ng e2e",

@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  // providers: [{provide: APP_BASE_HREF, useValue: '/appstore-portal'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

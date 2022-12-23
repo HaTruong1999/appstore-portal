@@ -4,22 +4,14 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
-  {
-    path: "home",
-    pathMatch: "prefix",
-    component: HomeComponent,
-    // children: [
-    //   {
-    //     path: "",
-    //     component: HomeComponent,
-    //     data: { title: 'Home' }
-    //   }
-    // ]
-  }
+  { path: "home",pathMatch: "full", component: HomeComponent},
+  { path: '**', redirectTo: 'home'},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: "legacy" })],
+  imports: [RouterModule.forRoot(routes, 
+    { relativeLinkResolution: "legacy" , useHash: true}
+    )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
