@@ -1,0 +1,43 @@
+.logo-main {
+    padding-right: 10px;
+    img {
+        width: auto;
+        height: 50px;
+    }
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 767px) {
+    .header-area{
+        height: 50px !important;
+        .main-nav {
+            .logo {
+                line-height: 45px;
+            }
+            .menu-trigger{
+                top: 8px;
+            }
+        }
+        .logo-main {
+            padding-right: 10px;
+            img {
+                width: auto;
+                height: 40px !important;
+            }
+        }
+        .logo-text {
+            font-size: 14px;
+        }
+    }
+
+    .header-sticky {
+        min-height: 50px !important;
+        .nav{
+            border-right: 1px solid;
+            border-left: 1px solid;
+            border-bottom: 1px solid;
+            border-color: #e5dddd;
+            margin-top: 50px !important;
+        }
+    }
+}
